@@ -10,9 +10,9 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 
 # Define variables
-APP_TIER_ALB_URL="http://internal-web-tier-external-ALB-2111129304.ap-south-1.elb.amazonaws.com"  # Replace with your alb endpoint
+APP_TIER_ALB_URL="app-tier-internal-ALB-1353530872.ap-south-1.elb.amazonaws.com"  # Replace with your alb endpoint
 NGINX_CONF="/etc/nginx/nginx.conf"
-##SERVER_NAME="project.reyazawstrainer.com"  # Replace with your actual domain name
+#SERVER_NAME="project.reyazawstrainer.com"  # Replace with your actual domain name
 
 # Backup existing NGINX configuration
 sudo cp $NGINX_CONF ${NGINX_CONF}.bak
